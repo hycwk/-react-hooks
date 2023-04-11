@@ -1,0 +1,41 @@
+{
+	"compilerOptions": {
+		"allowJs": true,
+		"allowSyntheticDefaultImports": true,
+
+		"baseUrl": "./src",
+		"outDir": "./ts_build",
+		
+		"esModuleInterop": true,
+		"jsx": "react",
+		"lib": ["es6", "dom"],			
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"noImplicitAny": true,		
+		"noImplicitThis": true,
+		
+		"target": "es5",	
+		/*
+		"types": [
+			"googlemaps"
+		],*/
+		"paths": {
+      "@smt/*": ["com/smartone/*"],
+			"@bootstrap-styled/css-mixins/lib/breakpoints": [
+				"custom_typings/@bootstrap-styled/css-mixins/lib/breakpoints"				
+			],
+			"react-use-dimensions": [
+				"custom_typings/react-use-dimensions"
+			],
+			"react-use-dimensions/types": [
+				"custom_typings/react-use-dimensions/types"
+			]
+		},
+		"sourceMap": false,
+		"strictNullChecks": true		
+	},
+	
+	"include": [
+		"./src/**/*"
+	]
+}
